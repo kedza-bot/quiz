@@ -1,4 +1,4 @@
-{
+{  
   "questions": {
     "beginner":{
     "text": [
@@ -258,11 +258,11 @@
             "answer":"Create, Read, Update, Delete"},
         {
             "Question":"Which Python web framework is commonly used to build APIs?",
-             "answer":"Create, Read, Update, Delete"
+            "answer":"Flask"
         },
         {
             "Question":"What does API stand for?",
-            "answer":"Create, Read, Update, Delete"
+            "answer":"Application programming interface"
         },
         {
             "Question":"Name one digital marketing strategy to drive app downloads.",
@@ -282,7 +282,7 @@
                 "It personalizes user experiences and automates tasks",
                 "Making the app responsive"
             ],
-            "answer": null
+            "answer": 2 
         },
         {
             "question": "What is a pitch deck?",
@@ -292,7 +292,7 @@
                 "A color palette template",
                 "A data encryption method"
             ],
-            "answer": null
+            "answer": 1
         },
         {
             "question": "Which of the following is a potential source of startup funding?",
@@ -422,7 +422,7 @@
           "Storing configuration like database, installed apps, static files",
           "Writing Python logic"
         ],
-        "answer": null
+        "answer": 2
       },
       {
         "question": "What is the correct file extension for a Python file?",
@@ -432,17 +432,7 @@
           ".py",
           ".exe"
         ],
-        "answer": null
-      },
-      {
-        "question": "What is a backend in app development responsible for?",
-        "choices": [
-          "Visual design of the app",
-          "Styling HTML pages",
-          ".py",
-          ".exe"
-        ],
-        "answer": null
+        "answer": 2
       }
     ]
     }

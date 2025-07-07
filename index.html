@@ -24,46 +24,52 @@
     <br/>
 <!-------------------********************Beginner section Q&A ***********-------------------->
 <section>
-    <h4 class="levels">Beginner Level (Weeks 1-3)</h4>
+    <h4 class="levels">Beginner Level<span>(Weeks 1-3)</span> </h4>
+    <hr/>
     <br/>
     <br/>
     <div class="QandA">
-        <p>What are 6  steps involved in the app development process?</p>
+        <p><strong>Q</strong>1. What are 6  steps involved in the app development process?</p>
         <input type="text" id="answer1" placeholder="Your answer here">
-        <button onclick="checkQAswer1()">Submit</button>
-        <p id="result" class="result"></p>
+        <!-- <button onclick="checkQAswer1()">Submit</button> -->
+        <button onclick="checkUserAnswer(1)">Submit</button>
+        <p id="result1" class="result"></p>
     </div>
     <br/>
     <br/>
 
     <div class="QandA">
-    <p>Name 4 types of apps to develop</p>
-    <input type="text" id="answer2" placeholder="Your answer here">
-    <button onclick="checkQAnswer2()">Submit</button>
-    <p id="result2" class="result"></p>
-</div>
-<br/>
-<br/>
+        <p><strong>Q</strong>2. Name 4 types of apps to develop</p>
+        <input type="text" id="answer2" placeholder="Your answer here">
+        <!-- <button onclick="checkQAnswer2()">Submit</button> -->
+        <button onclick="checkUserAnswer(2)">Submit</button>
+        <p id="result2" class="result"></p>
+    </div>
+    <br/>
+    <br/>
 <div class="QandA">
-    <p>What does SDLC stand for?</p>
+    <p><strong>Q</strong>3. What does SDLC stand for?</p>
     <input type="text" id="answer3" placeholder="Your answer here">
-    <button onclick="checkQAnswer3()">Submit</button>
+    <!-- <button onclick="checkQAnswer3()">Submit</button> -->
+    <button onclick="checkUserAnswer(3)">Submit</button>
     <p id="result3" class="result"></p>
 </div> 
 <br/>
 <br/>
 <div class="QandA">
-    <p>Name one input control component of UI</p>
+    <p><strong>Q</strong>4. Name one input control component of UI</p>
     <input type="text" id="answer4" placeholder="Your answer here">
-    <button onclick="checkQAnswer4()">Submit</button>
+    <!-- <button onclick="checkQAnswer4()">Submit</button> -->
+    <button onclick="checkUserAnswer(4)">Submit</button>
     <p id="result4" class="result"></p>
 </div>
 <br/>
 <br/>
 <div class="QandA">
-    <p><strong>Q</strong>Name 3 commonly language used for Web dev front end in their correct order</p>
+    <p><strong>Q</strong>5. Name 3 commonly language used for Web dev front end in their correct order</p>
     <input type="text" id="answer5" placeholder="Your answer here">
-    <button onclick="checkQAnswer5()">Submit</button>
+    <!-- <button onclick="checkQAnswer5()">Submit</button> -->
+    <button onclick="checkUserAnswer(5)">Submit</button>
     <p id="result5"></p>
 </div>
 
@@ -73,160 +79,161 @@
 <!-------------------********************Beginner multiple choice section***********-------------------->
 <section class="mult-Q">
     <div class="m-c">
-        <p><strong>Q.</strong> What is the main role of CSS in web development?</p>
-        <label><input type="radio" name="choice1" value="a)"><strong>a)</strong> To structure the layout of an app</label> 
+        <p><strong>Q.</strong>6. What is the main role of CSS in web development?</p>
+        <label><input type="radio" name="choice1" value="a)"><strong> a)</strong> To structure the layout of an app</label> 
         <br/>
-        <label><input type="radio" name="choice1" value="b)"><strong>b)</strong> To write server-side code</label>
+        <label><input type="radio" name="choice1" value="b)"><strong> b)</strong> To write server-side code</label>
         <br/>
-        <label><input type="radio" name="choice1" value="c)"><strong>c)</strong> To style and beautify web content</label>
+        <label><input type="radio" name="choice1" value="c)"><strong> c)</strong> To style and beautify web content</label>
         <br/>
-        <label><input type="radio" name="choice1" value="d)"><strong>d)</strong> To debug HTML code</label>
+        <label><input type="radio" name="choice1" value="d)"><strong> d)</strong> To debug HTML code</label>
         <br/>
-        <button onclick="checkMCAnswer1()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer1()">Check your Answer</button>
         <p id="resultm_c1"></p>
         
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong> Which of the following is NOT a stage in the Software Development Life Cycle (SDLC)?</p>
-        <label><input type="radio" name="choice2" value="a)"><strong>a)</strong> Design</label>
+        <p><strong>Q.</strong>7. Which of the following is NOT a stage in the Software Development Life Cycle (SDLC)?</p>
+        <label><input type="radio" name="choice2" value="a)"><strong> a)</strong> Design</label>
         <br/>
-        <label><input type="radio" name="choice2" value="b)"><strong>b)</strong> Testing</label>
+        <label><input type="radio" name="choice2" value="b)"><strong> b)</strong> Testing</label>
         <br/>
-        <label><input type="radio" name="choice2" value="c)"><strong>c)</strong> Advertising</label>
+        <label><input type="radio" name="choice2" value="c)"><strong> c)</strong> Advertising</label>
         <br/>
-        <label><input type="radio" name="choice2" value="d)"><strong>d)</strong> Implementation</label>
+        <label><input type="radio" name="choice2" value="d)"><strong> d)</strong> Implementation</label>
         <br/>
-        <button onclick="checkMCAnswer2()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer2()">Check your Answer</button>
         <p id="resultm_c2"></p>
     </div>
     <br/>
     <br/>
+        <!-- ...existing code... -->
     <div class="m-c">
-        <p><strong>Q.</strong> Why do developers use GitHub?</p>
-        <label><input type="radio" name="choice3" value="a)"><strong>a)</strong> To collaborate and manage code changes</label>
+        <p><strong>Q.</strong>8. Why do developers use GitHub?</p>
+        <label><input type="radio" name="choice3" value="a)"><strong> a)</strong> To collaborate and manage code changes</label>
         <br/>
-        <label><input type="radio" name="choice3" value="b)"><strong>b)</strong> To store large video files</label>
+        <label><input type="radio" name="choice3" value="b)"><strong> b)</strong> To store large video files</label>
         <br/>
-        <label><input type="radio" name="choice3" value="c)"><strong>c)</strong> To send emails</label>
+        <label><input type="radio" name="choice3" value="c)"><strong> c)</strong> To send emails</label>
         <br/>
-        <label><input type="radio" name="choice3" value="d)"><strong>d)</strong> To host websites only</label>
-        <button onclick="checkMCAnswer3()">Check your Answer</button>
+        <label><input type="radio" name="choice3" value="d)"><strong> d)</strong> To host websites only</label><br/>
+        <button class="btn" onclick="checkMCAnswer3()">Check your Answer</button>
         <p id="resultm_c3"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong> What is one benefit of version control in app development?</p>
-        <label><input type="radio" name="choice4" value="a)"><strong>a)</strong> It reduces the app file size</label>
+        <p><strong>Q.</strong>9. What is one benefit of version control in app development?</p>
+        <label><input type="radio" name="choice4" value="a)"><strong> a)</strong> It reduces the app file size</label>
         <br/>
-        <label><input type="radio" name="choice4" value="b)"><strong>b)</strong> It keeps track of code changes and helps with collaboration</label>
+        <label><input type="radio" name="choice4" value="b)"><strong> b)</strong> It keeps track of code changes and helps with collaboration</label>
         <br/>
-        <label><input type="radio" name="choice4" value="c)"><strong>c)</strong> It automatically writes your code</label>
+        <label><input type="radio" name="choice4" value="c)"><strong> c)</strong> It automatically writes your code</label>
         <br/>
-        <label><input type="radio" name="choice4" value="d)"><strong>d)</strong> It prevents user errors</label>
+        <label><input type="radio" name="choice4" value="d)"><strong> d)</strong> It prevents user errors</label>
         <br/>
-        <button onclick="checkMCAnswer4()"> Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer4()"> Check your Answer</button>
         <p id="resultm_c4"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong> In UX Design, what does UX stand for?</p>
-        <label><input type="radio" name="choice5" value="a)"><strong>a)</strong> Ultimate Experience</label>
+        <p><strong>Q.</strong>10. In UX Design, what does UX stand for?</p>
+        <label><input type="radio" name="choice5" value="a)"><strong> a)</strong> Ultimate Experience</label>
         <br/>
-        <label><input type="radio" name="choice5" value="b)"><strong>b)</strong> User Experiment</label>
+        <label><input type="radio" name="choice5" value="b)"><strong> b)</strong> User Experiment</label>
         <br/>
-        <label><input type="radio" name="choice5" value="c)"><strong>c)</strong> User Experience</label>
+        <label><input type="radio" name="choice5" value="c)"><strong> c)</strong> User Experience</label>
         <br/>
-        <label><input type="radio" name="choice5" value="d)"><strong>d)</strong> Utility Exchange</label>
+        <label><input type="radio" name="choice5" value="d)"><strong> d)</strong> Utility Exchange</label>
         <br/>
-        <button onclick="checkMCAnswer5()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer5()">Check your Answer</button>
         <p id="resultm_c5"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p class="m-cp"><strong>Q.</strong> Which layout technique is best for creating responsive designs in CSS?</p>
-        <label><input type="radio" name="choice6" value="a)"><strong>a)</strong> Inline styling</label>
+        <p class="m-cp"><strong>Q.</strong>11. Which layout technique is best for creating responsive designs in CSS?</p>
+        <label><input type="radio" name="choice6" value="a)"><strong> a)</strong> Inline styling</label>
         <br/>
-        <label><input type="radio" name="choice6" value="b)"><strong>b)</strong> Tables</label>
+        <label><input type="radio" name="choice6" value="b)"><strong> b)</strong> Tables</label>
         <br/>
-        <label><input type="radio" name="choice6" value="c)"><strong>c)</strong> Flexbox/Grid</label>
+        <label><input type="radio" name="choice6" value="c)"><strong> c)</strong> Flexbox/Grid</label>
         <br/>
-        <label><input type="radio" name="choice6" value="d)"><strong>d)</strong> Lists</label>
+        <label><input type="radio" name="choice6" value="d)"><strong> d)</strong> Lists</label>
         <br/>
-        <button onclick="checkMCAnswer6()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer6()">Check your Answer</button>
         <p id="resultm_c6"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong> What is the FIRST step in the Software development life cycle</p>
-        <label><input type="radio" name="choice7" value="a)"><strong>a)</strong> Testing</label>
+        <p><strong>Q.</strong>12. What is the FIRST step in the Software development life cycle</p>
+        <label><input type="radio" name="choice7" value="a)"><strong> a)</strong> Testing</label>
         <br/>
-        <label><input type="radio" name="choice7" value="b)"><strong>b)</strong> Maintenance </label>
+        <label><input type="radio" name="choice7" value="b)"><strong> b)</strong> Maintenance </label>
         <br/>
-        <label><input type="radio" name="choice7" value="c)"><strong>c)</strong> Requirements gathering </label>
+        <label><input type="radio" name="choice7" value="c)"><strong> c)</strong> Requirements gathering </label>
         <br/>
-        <label><input type="radio" name="choice7" value="d)"><strong>d)</strong> Development</label>
+        <label><input type="radio" name="choice7" value="d)"><strong> d)</strong> Development</label>
         <br/>
-        <button onclick="checkMCAnswer7()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer7()">Check your Answer</button>
         <p id="resultm_c7"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong>What should be considered when selecting an app development strategy?</p>
-        <label><input type="radio" name="choice8" value="a)"><strong>a)</strong> Device battery life</label>
+        <p><strong>Q.</strong>13. What should be considered when selecting an app development strategy?</p>
+        <label><input type="radio" name="choice8" value="a)"><strong> a)</strong> Device battery life</label>
         <br/>
-        <label><input type="radio" name="choice8" value="b)"><strong>b)</strong> Platform, performance needs, and budget</label>
+        <label><input type="radio" name="choice8" value="b)"><strong> b)</strong> Platform, performance needs, and budget</label>
         <br/>
-        <label><input type="radio" name="choice8" value="c)"><strong>c)</strong> Color of the app </label>
+        <label><input type="radio" name="choice8" value="c)"><strong> c)</strong> Color of the app </label>
         <br/>
-        <label><input type="radio" name="choice8" value="d)"><strong>d)</strong> Number of users on social media </label>
+        <label><input type="radio" name="choice8" value="d)"><strong> d)</strong> Number of users on social media </label>
         <br/>
-        <button onclick="checkMCAnswer8()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer8()">Check your Answer</button>
         <p id="resultm_c8"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong> What command initializes a new Git repository?</p>
-        <label><input type="radio" name="choice9" value="a)"><strong>a)</strong> `git init` </label>
+        <p><strong>Q.</strong>14. What command initializes a new Git repository?</p>
+        <label><input type="radio" name="choice9" value="a)"><strong> a)</strong> `git init` </label>
         <br/>
-        <label><input type="radio" name="choice9" value="b)"><strong>b)</strong> `git start` </label>
+        <label><input type="radio" name="choice9" value="b)"><strong> b)</strong> `git start` </label>
         <br/>
-        <label><input type="radio" name="choice9" value="c)"><strong>c)</strong> `git begin`</label>
+        <label><input type="radio" name="choice9" value="c)"><strong> c)</strong> `git begin`</label>
         <br/>
         <br/>
-        <button onclick="checkMCAnswer9()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer9()">Check your Answer</button>
         <p id="resultm_c9"></p>
     </div>
-   
-</section>
-<br/>
-<br/>
+    <!-- ...existing code... -->
 
 <!-----------------------*****Intermediate App Development****-->
-<h4>Intermediate App Development Quiz</h4>
+<!-- <h4>Intermediate App Development Quiz</h4> -->
 
 <!------------********************* Intermediate Q and A  section*******************(5)-->
-<Section >
-    <h4 class="levels">Intermediate Level (Weeks 4-6)</h4>
+<Section class="mult-Q">
+    <h4 class="levels">Intermediate Level <span>(Weeks 4-6)</span></h4>
+    <hr/>
+    <br/>
+    <br/>
     <div class="QandA">
         <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
         <input type="text" id="answer1" placeholder="Your answer here">
-        <button onclick="checkQAnswer1()">Submit</button>
+        <button class="btn" onclick="checkQAnswer1()">Submit</button>
         <p id="result"></p>
     </div>
     <br/>
     <br/>
     <div class="QandA">
-        <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
+    <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
         <input type="text" id="answer2" placeholder="Your answer here">
-        <button onclick="checkQAnswer1()">Submit</button>
+        <button class="btn" onclick="checkQAnswer1()">Submit</button>
         <p id="result"></p>
     </div> 
     <br/>
@@ -234,7 +241,7 @@
     <div class="QandA">
         <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
         <input type="text" id="answer3" placeholder="Your answer here">
-        <button onclick="checkQAnswer3()">Submit</button>
+        <button class="btn" onclick="checkQAnswer3()">Submit</button>
         <p id="result"></p>
     </div> 
     <br/>
@@ -242,14 +249,14 @@
     <div class="QandA">
         <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
         <input type="text" id="answer4" placeholder="Your answer here">
-        <button onclick="checkQAnswer4()">Submit</button>
+        <button class="btn" onclick="checkQAnswer4()">Submit</button>
         <p id="result"></p>
     </div> 
     <br/>
     <br/><div class="QandA">
         <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
         <input type="text" id="answer5" placeholder="Your answer here">
-        <button onclick="checkQAnswer5()">Submit</button>
+        <button class="btn" onclick="checkQAnswer5()">Submit</button>
         <p id="result"></p>
     </div> 
     <br/>
@@ -257,209 +264,152 @@
     <div class="QandA">
         <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
         <input type="text" id="answer1" placeholder="Your answer here">
-        <button onclick="checkAnswer()">Submit</button>
+        <button class="btn" onclick="checkAnswer()">Submit</button>
         <p id="result"></p>
     </div>  
-
 </Section>
+<br/>
+<br/>
 <!-------------------********************Intermediate  multiple choice section***********-------------------->
-<section class="m-cs">
-    <!-- <div class="m-c">
-        <p><strong>Q.</strong> Which layout technique is best for creating responsive designs in CSS?</p>
-        <label><input type="radio" name="ux1" value="a)"><strong>a)</strong> Inline styling</label>
-        <br/>
-        <label><input type="radio" name="ux1" value="b)"><strong>b)</strong> Tables</label>
-        <br/>
-        <label><input type="radio" name="ux1" value="c)"><strong>c)</strong> Flexbox/Grid</label>
-        <br/>
-        <label><input type="radio" name="ux1" value="d)"><strong>d)</strong> Lists</label>
-        <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
-        <p id="resultux1"></p>
-    </div>
-    <br/>
-    <br/>
+<section class="mult-Q">
     <div class="m-c">
-        <p><strong>Q.</strong>What is the FIRST step in the Software development life cycle?</p>
-        <label><input type="radio" name="ux2" value="a)"><strong>a)</strong> Testing</label>
+        <p><strong>Q.</strong>1. What is JavaScript primarily used for in web apps??</p>
+        <label><input type="radio" name="ux5" value="a)"><strong> a)</strong> Designing layouts</label>
         <br/>
-        <label><input type="radio" name="ux2" value="b)"><strong>b)</strong> Maintenance</label>
+        <label><input type="radio" name="ux5" value="b)"><strong> b)</strong> Adding interactivity and functionality</label>
         <br/>
-        <label><input type="radio" name="ux2" value="c)"><strong>c)</strong> Requirements gathering</label>
-        <br/>
-        <label><input type="radio" name="ux2" value="d)"><strong>d)</strong> Development</label>
-        <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
-        <p id="resultux2"></p>
-    </div>
-    <br/>
-    <br/>
-    <div class="m-c">
-        <p><strong>Q.</strong>What should be considered when selecting an app development strategy? </p>
-        <label><input type="radio" name="ux3" value="a)"><strong>a)</strong> Device battery life</label>
-        <br/>
-        <label><input type="radio" name="ux3" value="b)"><strong>b)</strong> Platform, performance needs, and budget</label>
-        <br/>
-        <label><input type="radio" name="ux3" value="c)"><strong>c)</strong> Color of the app</label>
-        <br/>
-        <label><input type="radio" name="ux3" value="d)"><strong>d)</strong> Number of users on social media</label>
-        <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
-        <p id="resultux3"></p>
-    </div>
-    <br/>
-    <br/>
-    <div class="m-c">
-        <p><strong>Q.</strong> What command initializes a new Git repository?</p>
-        <label><input type="radio" name="ux4" value="a)"><strong>a)</strong> `git init`</label>
-        <br/>
-        <label><input type="radio" name="ux4" value="b)"><strong>b)</strong> `git start`</label>
-        <br/>
-        <label><input type="radio" name="ux4" value="c)"><strong>c)</strong> `git begin`</label>
-        <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
-        <p id="resultux4"></p>
-    </div> -->
-    <br/>
-    <br/>
-    <div class="m-c">
-    <p><strong>Q.</strong>1. What is JavaScript primarily used for in web apps??</p>
-        <label><input type="radio" name="ux5" value="a)"><strong>a)</strong> Designing layouts</label>
-        <br/>
-        <label><input type="radio" name="ux5" value="b)"><strong>b)</strong> Adding interactivity and functionality</label>
-        <br/>
-        <label><input type="radio" name="ux5" value="c)"><strong>c)</strong> Styling fonts </label>
+        <label><input type="radio" name="ux5" value="c)"><strong> c)</strong> Styling fonts </label>
         <br>
-        <label><input type="radio" name="ux5" value="c)"><strong>c)</strong> Creating image files </label>
+        <label><input type="radio" name="ux5" value="d)"><strong>d) </strong> Creating image files </label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer10()">Check your Answer</button>
         <p id="resultux5"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>2. Which of the following is an example of JavaScript in action on a webpage? </p>
-        <label><input type="radio" name="ux6" value="a)"><strong>a)</strong> Changing the background color when a button is clicked</label>
+        <p><strong>Q.</strong>2. Which of the following is an example of JavaScript in action on a webpage? </p>
+        <label><input type="radio" name="ux6" value="a)"><strong> a)</strong> Changing the background color when a button is clicked</label>
         <br/>
-        <label><input type="radio" name="ux6" value="b)"><strong>b)</strong> Setting the page font using CSS</label>
+        <label><input type="radio" name="ux6" value="b)"><strong> b)</strong> Setting the page font using CSS</label>
         <br/>
-        <label><input type="radio" name="ux6" value="c)"><strong>c)</strong> Defining the page layout with HTML</label>
+        <label><input type="radio" name="ux6" value="c)"><strong> c)</strong> Defining the page layout with HTML</label>
         <br/>
-        <label><input type="radio" name="ux6" value="c)"><strong>c)</strong> Compressing image sizes</label>
+        <label><input type="radio" name="ux6" value="d)"><strong> d)</strong> Compressing image sizes</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer11()">Check your Answer</button>
         <p id="resultux6"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>3. In Design Thinking, what is the purpose of the “Empathize” stage?</p>
-        <label><input type="radio" name="ux7" value="a)"><strong>a)</strong> Generate business models</label>
+        <p><strong>Q.</strong>3. In Design Thinking, what is the purpose of the “Empathize” stage?</p>
+        <label><input type="radio" name="ux7" value="a)"><strong> a)</strong> Generate business models</label>
         <br/>
-        <label><input type="radio" name="ux7" value="b)"><strong>b)</strong> Write user code</label>
+        <label><input type="radio" name="ux7" value="b)"><strong> b)</strong> Write user code</label>
         <br/>
-        <label><input type="radio" name="ux7" value="c)"><strong>c)</strong> Understand the users' needs and problems</label>
+        <label><input type="radio" name="ux7" value="c)"><strong> c)</strong> Understand the users' needs and problems</label>
         <br/>
-        <label><input type="radio" name="ux7" value="c)"><strong>c)</strong> Build wireframes</label>
+        <label><input type="radio" name="ux7" value="d)"><strong> d)</strong> Build wireframes</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer12()">Check your Answer</button>
         <p id="resultux7"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong> What does API stand for?</p>
-        <label><input type="radio" name="ux8" value="a)"><strong>a)</strong> App Plugin Integration</label>
+        <p><strong>Q.</strong> What does API stand for?</p>
+        <label><input type="radio" name="ux8" value="a)"><strong> a)</strong> App Plugin Integration</label>
         <br/>
-        <label><input type="radio" name="ux8" value="b)"><strong>b)</strong> Application Programming Interface</label>
+        <label><input type="radio" name="ux8" value="b)"><strong> b)</strong> Application Programming Interface</label>
         <br/>
-        <label><input type="radio" name="ux8" value="c)"><strong>c)</strong> Automated Program Interaction</label>
+        <label><input type="radio" name="ux8" value="c)"><strong> c)</strong> Automated Program Interaction</label>
         <br/>
-        <label><input type="radio" name="ux8" value="c)"><strong>c)</strong> Application Protocol Internet</label>
+        <label><input type="radio" name="ux8" value="d)"><strong> d)</strong> Application Protocol Internet</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer13()">Check your Answer</button>
         <p id="resultux8"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>5. What is the main function of an API in app development?</p>
-        <label><input type="radio" name="ux9" value="a)"><strong>a)</strong> Designing the UI</label>
+        <p><strong>Q.</strong>5. What is the main function of an API in app development?</p>
+        <label><input type="radio" name="ux9" value="a)"><strong> a)</strong> Designing the UI</label>
         <br/>
-        <label><input type="radio" name="ux9" value="b)"><strong>b)</strong> Connecting apps to external services or data sources</label>
+        <label><input type="radio" name="ux9" value="b)"><strong> b)</strong> Connecting apps to external services or data sources</label>
         <br/>
-        <label><input type="radio" name="ux9" value="c)"><strong>c)</strong> Storing HTML content</label>
+        <label><input type="radio" name="ux9" value="c)"><strong> c)</strong> Storing HTML content</label>
         <br/>
-        <label><input type="radio" name="ux9" value="c)"><strong>c)</strong> Adding colors to buttons</label>
+        <label><input type="radio" name="ux9" value="c)"><strong> d)</strong> Adding colors to buttons</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer14()">Check your Answer</button>
         <p id="resultux9"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>6. What is “User-Centric Development”?</p>
-        <label><input type="radio" name="ux10" value="a)"><strong>a)</strong> Focusing on developer tools only</label>
+        <p><strong>Q.</strong>6. What is “User-Centric Development”?</p>
+        <label><input type="radio" name="ux10" value="a)"><strong> a)</strong> Focusing on developer tools only</label>
         <br/>
-        <label><input type="radio" name="ux10" value="b)"><strong>b)</strong> Designing the app for business investors</label>
+        <label><input type="radio" name="ux10" value="b)"><strong> b)</strong> Designing the app for business investors</label>
         <br/>
-        <label><input type="radio" name="ux10" value="c)"><strong>c)</strong> Creating apps that are built around user needs and experiences</label>
+        <label><input type="radio" name="ux10" value="c)"><strong> c)</strong> Creating apps that are built around user needs and experiences</label>
         <br/>
-        <label><input type="radio" name="ux10" value="c)"><strong>c)</strong> Ignoring user feedback until the end</label>
+        <label><input type="radio" name="ux10" value="c)"><strong> d)</strong> Ignoring user feedback until the end</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer15()">Check your Answer</button>
         <p id="resultux10"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>7. Which of the following is an example of **Data Input** in an app?</p>
-        <label><input type="radio" name="ux11" value="a)"><strong>a)</strong> A user clicking a button</label>
+        <p><strong>Q.</strong>7. Which of the following is an example of **Data Input** in an app?</p>
+        <label><input type="radio" name="ux11" value="a)"><strong> a)</strong> A user clicking a button</label>
         <br/>
-        <label><input type="radio" name="ux11" value="b)"><strong>b)</strong> A webpage loading</label>
+        <label><input type="radio" name="ux11" value="b)"><strong> b)</strong> A webpage loading</label>
         <br/>
-        <label><input type="radio" name="ux11" value="c)"><strong>c)</strong> A user typing their name into a form</label>
+        <label><input type="radio" name="ux11" value="c)"><strong> c)</strong> A user typing their name into a form</label>
         <br/>
-          <label><input type="radio" name="ux11" value="c)"><strong>c)</strong> A server sending data</label>
+        <label><input type="radio" name="ux11" value="d)"><strong> d)</strong> A server sending data</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer16()">Check your Answer</button>
         <p id="resultux11"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>8. What is a common data format used when processing API responses in JavaScript?</p>
-        <label><input type="radio" name="ux12" value="a)"><strong>a)</strong> JPEG</label>
+        <p><strong>Q.</strong>8. What is a common data format used when processing API responses in JavaScript?</p>
+        <label><input type="radio" name="ux12" value="a)"><strong> a)</strong> JPEG</label>
         <br/>
-        <label><input type="radio" name="ux12" value="b)"><strong>b)</strong> PDF</label>
+        <label><input type="radio" name="ux12" value="b)"><strong> b)</strong> PDF</label>
         <br/>
-        <label><input type="radio" name="ux12" value="c)"><strong>c)</strong> JSON</label>
+        <label><input type="radio" name="ux12" value="c)"><strong> c)</strong> JSON</label>
         <br/>
-        <label><input type="radio" name="ux12" value="c)"><strong>c)</strong> HTML</label>
+        <label><input type="radio" name="ux12" value="d)"><strong> d)</strong> HTML</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer17()">Check your Answer</button>
         <p id="resultux12"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>9.  Which tool is commonly used in JavaScript to loop through and analyze datasets?</p>
-        <label><input type="radio" name="ux13" value="a)"><strong>a)</strong>`document.write()`</label>
+        <p><strong>Q.</strong>9.  Which tool is commonly used in JavaScript to loop through and analyze datasets?</p>
+        <label><input type="radio" name="ux13" value="a)"><strong> a)</strong>`document.write()`</label>
         <br/>
-        <label><input type="radio" name="ux13" value="b)"><strong>b)</strong> `if` statement</label>
+        <label><input type="radio" name="ux13" value="b)"><strong> b)</strong> `if` statement</label>
         <br/>
-        <label><input type="radio" name="ux13" value="c)"><strong>c)</strong> `for` loop</label>
+        <label><input type="radio" name="ux13" value="c)"><strong> c)</strong> `for` loop</label>
         <br/>
-        <label><input type="radio" name="ux13" value="c)"><strong>c)</strong> `alert()`</label>
+        <label><input type="radio" name="ux13" value="d)"><strong> d)</strong> `alert()`</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer18()">Check your Answer</button>
         <p id="resultux13"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong>Which of the following best describes Artificial Intelligence (AI)?</p>
-        <label><input type="radio" name="ux14" value="a)"><strong>a)</strong> A coding language for apps</label>
+        <p><strong>Q.</strong>10. Which of the following best describes Artificial Intelligence (AI)?</p>
+        <label><input type="radio" name="ux14" value="a)"><strong> a)</strong> A coding language for apps</label>
         <br/>
         <label><input type="radio" name="ux14" value="b)"><strong>b)</strong> Pre-written design templates</label>
         <br/>
@@ -467,121 +417,138 @@
         <br/>
         <label><input type="radio" name="ux14" value="d)"><strong>d)</strong> A storage method for HTML content</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer19()">Check your Answer</button>
         <p id="resultux14"></p>
-        <br/>
+    </div>
+    <br/>
     <br/>
     <div class="m-c">
-    <p><strong>Q.</strong>What is one key reason to learn Business Development during app creation?</p>
+        <p><strong>Q.</strong>What is one ke y reason to learn Business  Development during app creation?</p>
         <label><input type="radio" name="ux15" value="a)"><strong>a)</strong> To become a better designer</label>
         <br/>
         <label><input type="radio" name="ux15" value="b)"><strong>b)</strong> To help market, fund, and grow your app idea</label>
         <br/>
         <label><input type="radio" name="ux15" value="c)"><strong>c)</strong> To learn JavaScript faster</label>
         <br/>
-        <label><input type="radio" name="ux15" value="c)"><strong>c)</strong> To avoid using CSS</label>
+        <label><input type="radio" name="ux15" value="d)"><strong>d)</strong> To avoid using CSS</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer20()">Check your Answer</button>
         <p id="resultux15"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong>Why is user testing essential during app development?</p>
-        <label><input type="radio" name="ux16" value="a)"><strong>a)</strong> To verify performance optimization</label>
+        <p><strong>Q.</strong>Why is user testing essential during  app development?</p>
+        <label><input type="radio" name="ux16" value="a)"><strong> a)</strong> To verify performance optimization</label>
         <br/>
-        <label><input type="radio" name="ux16" value="b)"><strong>b)</strong> To ensure the color scheme is attractive</label>
+        <label><input type="radio" name="ux16" value="b)"><strong>b )</strong> To ensure the color scheme is attractive</label>
         <br/>
         <label><input type="radio" name="ux16" value="c)"><strong>c)</strong> To identify usability issues early</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer21()">Check your Answer</button>
         <p id="resultux16"></p>
-
+    </div>
 </section>
 
 <br/>
 <br/>
-<!-------------------******************** Advanced Skills (Weeks 7–9) ***********-------------------->
+<!-------------------******************** Advanced Skills (Weeks 7 –9) ***********-------------------->
 <section>
-    <h4 class="levels">Advanced Level (Weeks 7-9)</h4>
-    <br/>
+    <h4 class="levels">Advanced Level <span>(Weeks 7-9)</span></h4 >
+    <hr/>
     <br/>
     <div class="QandA">
-        <p><strong>Q</strong>What does CRUD stand for in API design?</p>
-        <input type="text" id="answer1" placeholder="Your answer here">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="result"></p>
+        <p><strong>Q</strong>1. What does CRUD stand for in API design?</p>
+        <!-- <input type="text" id="answer1" placeholder="Your answer here"> -->
+        <!-- <button class="btn" onclick="checkAnswer()">Submit</button> -->
+        <!-- <p id="result"></p> -->
+        <!-- try now -->
+        <input type="text" id="advanced_answer1" placeholder="Your answer here">
+        <button onclick="checkAdvancedAnswer(1)">Submit</button>
+        <p id="advanced_result1"></p>
     </div>
     <br/>
     <br/>
     <div class="QandA">
-    <p><strong>Q</strong>Which Python web framework is commonly used to build APIs?</p>
-    <input type="text" id="answer1" placeholder="Your answer here">
-    <button onclick="checkAnswer()">Submit</button>
-    <p id="result"></p>
+        <p><strong>Q</strong>2. Which Python web framework is commonly used to build APIs?</p>
+        <!-- <input type="text" id="answer1" placeholder="Your answer here">
+        <button class="btn" onclick="checkAnswer()">Submit</button>
+        <p id="result"></p> -->
+        <input type="text" id="advanced_answer2" placeholder="Your answer here">
+        <button onclick="checkAdvancedAnswer(2)">Submit</button>
+        <p id="advanced_result2"></p>
 </div>
 <br/>
 <br/>
 <div class="QandA">
-    <p><strong>Q</strong> What does API stand for?</p>
-    <input type="text" id="answer1" placeholder="Your answer here">
+    <p><strong>Q</strong>3. What does API stand for?</p>
+    <!-- <input type="text" id="answer1" placeholder="Your answer here">
     <button onclick="checkAnswer()">Submit</button>
-    <p id="result"></p>
+    <p id="result"></p> -->
+    <input type="text" id="advanced_answer3" placeholder="Your answer here">
+        <button onclick="checkAdvancedAnswer(3)">Submit</button>
+        <p id="advanced_result3"></p>
 </div> 
 <br/>
 <br/>
 <div class="QandA">
-    <p><strong>Q</strong> Name one digital marketing strategy to drive app downloads.</p>
-    <input type="text" id="answer1" placeholder="Your answer here">
-    <button onclick="checkAnswer()">Submit</button>
-    <p id="result"></p>
+    <p><strong>Q</strong>4. Name one digital marketing strategy to drive app downloads.</p>
+    <!-- <input type="text" id="answer1" placeholder="Your answer here">
+    <button class="btn" onclick="checkAnswer(4)">Submit</button>
+    <p id="result"></p> -->
+    <input type="text" id="advanced_answer4" placeholder="Your answer here">
+        <button onclick="checkAdvancedAnswer(4)">Submit</button>
+        <p id="advanced_result4"></p>
 </div> 
 <br/>
 <br/>
 <div class="QandA">
-    <p><strong>Q</strong>What’s the difference between venture capital and angel investment? </p>
-    <input type="text" id="answer1" placeholder="Your answer here">
-    <button onclick="checkAnswer()">Submit</button>
-    <p id="result"></p>
+    <p><strong>Q</strong>5. What’s the difference between venture capital and angel investment? </p>
+    <!-- <input type="text" id="answer1" placeholder="Your answer here">
+    <button class="btn" onclick="checkAnswer()">Submit</button>
+    <p id="result"></p> -->
+    <input type="text" id="advanced_answer5" placeholder="Your answer here">
+        <button onclick="checkAdvancedAnswer(5)">Submit</button>
+        <p id="advanced_result5"></p>
 </div> 
 
-</section>
+</section class="mult-Q">
 <br>
 <br>
 <!-------------------******************** multiple choice section***********-------------------->
-<section class="m-c">
+<section class="mult-Q">
     <div class="m-c">
-        <p><strong>Q.</strong> What is one way AI can improve an app?</p>
-        <label><input type="radio" name="crud1" value="a)"><strong>a)</strong> It decreases the file size</label>
+        <p><strong>Q.</strong>6. What is one way AI can improve an app?</p>
+        <label><input type="radio" name="crud1" value="a)"><strong> a)</strong> It decreases the file size</label>
         <br/>
-        <label><input type="radio" name="crud1" value="b)"><strong>b)</strong> It replaces the app store</label>
+        <label><input type="radio" name="crud1" value="b)"><strong> b)</strong> It replaces the app store</label>
         <br/>
-        <label><input type="radio" name="crud1" value="c)"><strong>c)</strong> It personalizes user experiences and automates tasks</label>
+        <label><input type="radio" name="crud1" value="c)"><strong> c)</strong> It personalizes user experiences and automates tasks</label>
         <br/>
-        <label><input type="radio" name="crud1" value="d)"><strong>d)</strong> Making the app responsive</label>
+        <label><input type="radio" name="crud1" value="d)"><strong> d)</strong> Making the app responsive</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
+        <button class="btn" onclick="checkMCAnswer22()">Check your Answer</button>
         <p id="resultcrud1"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong>What is a pitch deck?</p>
-        <label><input type="radio" name="crud2" value="a)"><strong>a)</strong> A digital whiteboard for coding</label>
+        <p><strong>Q.</strong>7. What is a pitch deck?</p>
+        <label><input type="radio" name="crud2" value="a)"><strong> a)</strong> A digital whiteboard for coding</label>
         <br/>
-        <label><input type="radio" name="crud2" value="b)"><strong>b)</strong> A short visual presentation used to secure business funding</label>
+        <label><input type="radio" name="crud2" value="b)"><strong> b)</strong> A short visual presentation used to secure business funding</label>
         <br/>
-        <label><input type="radio" name="crud2" value="c)"><strong>c)</strong> A color palette template</label>
+        <label><input type="radio" name="crud2" value="c)"><strong> c)</strong> A color palette template</label>
         <br/>
-        <label><input type="radio" name="crud2" value="d)"><strong>d)</strong> A data encryption method</label>
+        <label><input type="radio" name="crud2" value="d)"><strong> d)</strong> A data encryption method</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
-        <p id="resultcrud1"></p>
+        <button class="btn" onclick="checkMCAnswer23()">Check your Answer</button>
+        <p id="resultcrud2"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong>Which of the following is a potential source of startup funding?</p>
+        <p><strong>Q.</strong>8. Which of the following is a potent ial source of startup funding?</p>
         <label><input type="radio" name="crud3" value="a)"><strong>a)</strong> App Store reviews </label>
         <br/>
         <label><input type="radio" name="crud3" value="b)"><strong>b)</strong> Venture Capital</label>
@@ -590,220 +557,225 @@
         <br/>
         <label><input type="radio" name="crud3" value="d)"><strong>d)</strong> API tokens</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
-        <p id="resultcrud1"></p>
+        <button class="btn" onclick="checkMCAnswer24()">Check your Answer</button>
+        <p id="resultcrud3"></p>
     </div>
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong> What is the purpose of marketing an app?</p>
-        <label><input type="radio" name="crud4" value="a)"><strong>a)</strong> To test the app on multiple devices </label>
+        <p><strong>Q.</strong>10. What is the  purpose of marketing an app?</p>
+        <label><input type="radio" name="crud4" value="a)"><strong> a)</strong> To test the app on multiple devices </label>
         <br/>
-        <label><input type="radio" name="crud4" value="b)"><strong>b)</strong> To attract users and grow the app’s visibility</label>
+        <label><input type="radio" name="crud4" value="b)"><strong> b)</strong> To attract users and grow the app’s visibility</label>
         <br/>
-        <label><input type="radio" name="crud4" value="c)"><strong>c)</strong> To store user passwords</label>
+        <label><input type="radio" name="crud4" value="c)"><strong> c)</strong> To store user passwords</label>
         <br/>
-        <label><input type="radio" name="crud4" value="d)"><strong>d)</strong> To manage source code</label>
+        <label><input type="radio" name="crud4" value="d)"><strong> d)</strong> To manage source code</label>
         <br/>
-        <button onclick="checkAnswer()">Check your Answer</button>
-        <p id="resultcrud1"></p>
+        <button class="btn" onclick="checkMCAnswer25()">Check your Answer</button>
+        <p id="resultcrud4"></p>
     </div>
     <br/>
     <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> What is Django?</p>
-    <label><input type="radio" name="django1" value="a)"><strong>a)</strong> A JavaScript framework for frontend design</label>
+    <p><strong>Q.</strong>11. What is Django?</p>
+    <label><input type="radio" name="django1" value="a)"><strong> a)</strong> A JavaScript framework for frontend design</label>
     <br/>
-    <label><input type="radio" name="django1" value="b)"><strong>b)</strong> A content management system </label>
+    <label><input type="radio" name="django1" value="b)"><strong> b)</strong> A content management system </label>
     <br/>
-    <label><input type="radio" name="django1" value="c)"><strong>c)</strong> A high-level Python web framework for rapid development</label>
+    <label><input type="radio" name="django1" value="c)"><strong> c)</strong> A high-level Python web framework for rapid development</label>
     <br/>
-    <label><input type="radio" name="django1" value="d)"><strong>d)</strong> A database engine</label>
+    <label><input type="radio" name="django1" value="d)"><strong> d)</strong> A database engine</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer26()">Check your Answer</button>
     <p id="resultdjango1"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> What language is Django written in?</p>
-    <label><input type="radio" name="django2" value="a)"><strong>a)</strong> Java</label>
+    <p><strong>Q.</strong>12. What language is Django written in?</p>
+    <label><input type="radio" name="django2" value="a)"><strong> a)</strong> Java</label>
     <br/>
-    <label><input type="radio" name="django2" value="b)"><strong>b)</strong> PHP</label>
+    <label><input type="radio" name="django2" value="b)"><strong> b)</strong> PHP</label>
     <br/>
-    <label><input type="radio" name="django2" value="c)"><strong>c)</strong> Python</label>
+    <label><input type="radio" name="django2" value="c)"><strong> c)</strong> Python</label>
     <br/>
-    <label><input type="radio" name="django2" value="d)"><strong>d)</strong> Ruby</label>
+    <label><input type="radio" name="django2" value="d)"><strong> d)</strong> Ruby</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer27()">Check your Answer</button>
     <p id="resultdjango2"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> Which command is used to create a new Django project?</p>
-    <label><input type="radio" name="django3" value="a)"><strong>a)</strong> `django startproject myproject` </label>
+    <p><strong>Q.</strong>13. Which command is used to create a new Django project?</p>
+    <label><input type="radio" name="django3" value="a)"><strong> a)</strong> `django startproject myproject` </label>
     <br/>
-    <label><input type="radio" name="django3" value="b)"><strong>b)</strong> `python startproject`</label>
+    <label><input type="radio" name="django3" value="b)"><strong> b)</strong> `python startproject`</label>
     <br/>
-    <label><input type="radio" name="django3" value="c)"><strong>c)</strong> `pip install django`</label>
+    <label><input type="radio" name="django3" value="c)"><strong> c)</strong> `pip install django`</label>
     <br/>
-    <label><input type="radio" name="django3" value="d)"><strong>d)</strong> `django-admin startproject myproject` </label>
+    <label><input type="radio" name="django3" value="d)"><strong> d)</strong> `django-admin startproject myproject` </label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer28()">Check your Answer</button>
     <p id="resultdjango3"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> In Python, what is the output of <code>print(type(5.0))</code>?</p>
-    <label><input type="radio" name="django4" value="a)"><strong>a)</strong> `<class 'int'>`</label>
+    <p><strong>Q.14.</strong> In Python, what is the output of <code>print(type(5.0))</code>?</p>
+    <label><input type="radio" name="django4" value="a)"><strong> a)</strong> `<class 'int'>`</label>
     <br/>
-    <label><input type="radio" name="django4" value="b)"><strong>b)</strong> `<class 'str'>`</label>
+    <label><input type="radio" name="django4" value="b)"><strong> b)</strong> `<class 'str'>`</label>
     <br/>
-    <label><input type="radio" name="django4" value="c)"><strong>c)</strong> `<class 'float'>`</label>
+    <label><input type="radio" name="django4" value="c)"><strong> c)</strong> `<class 'float'>`</label>
     <br/>
-    <label><input type="radio" name="django4" value="d)"><strong>d)</strong> `<class 'double'>`</label>
+    <label><input type="radio" name="django4" value="d)"><strong> d)</strong> `<class 'double'>`</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer29()">Check your Answer</button>
     <p id="resultdjango4"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> What does a Django “model” represent?</p>
-    <label><input type="radio" name="django5" value="a)"><strong>a)</strong> A database table structure</label>
+    <p><strong>Q.15</strong> What does a Django “model” represent?</p>
+    <label><input type="radio" name="django5" value="a)"><strong> a)</strong> A database table structure</label>
     <br/>
-    <label><input type="radio" name="django5" value="b)"><strong>b)</strong> A style rule</label>
+    <label><input type="radio" name="django5" value="b)"><strong> b)</strong> A style rule</label>
     <br/>
-    <label><input type="radio" name="django5" value="c)"><strong>c)</strong>  A layout design</label>
+    <label><input type="radio" name="django5" value="c)"><strong> c)</strong>  A layout design</label>
     <br/>
-    <label><input type="radio" name="django5" value="d)"><strong>d)</strong> A user interface</label>
+    <label><input type="radio" name="django5" value="d)"><strong> d)</strong> A user interface</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer30()">Check your Answer</button>
     <p id="resultdjango5"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> Which file in a Django app defines URL patterns?</p>
-    <label><input type="radio" name="django6" value="a)"><strong>a)</strong> `views.py` </label>
+    <p><strong>Q.</strong>16. Which file in a Django app defines URL patterns?</p>
+    <label><input type="radio" name="django6" value="a)"><strong> a)</strong> `views.py` </label>
     <br/>
-    <label><input type="radio" name="django6" value="b)"><strong>b)</strong> `urls.py`</label>
+    <label><input type="radio" name="django6" value="b)"><strong> b)</strong> `urls.py`</label>
     <br/>
-    <label><input type="radio" name="django6" value="c)"><strong>c)</strong> `settings.py` </label>
+    <label><input type="radio" name="django6" value="c)"><strong> c)</strong> `settings.py` </label>
     <br/>
-    <label><input type="radio" name="django6" value="d)"><strong>d)</strong> `admin.py`</label>
+    <label><input type="radio" name="django6" value="d)"><strong> d)</strong> `admin.py`</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer31()">Check your Answer</button>
     <p id="resultdjango6"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> What Python keyword is used to define a function?</p>
-    <label><input type="radio" name="django7" value="a)"><strong>a)</strong> `def`</label>
+    <p><strong>Q.</strong>17. What Python keyword is used to define a function?</p>
+    <label><input type="radio" name="django7" value="a)"><strong> a)</strong> `def`</label>
     <br/>
-    <label><input type="radio" name="django7" value="b)"><strong>b)</strong> `function`</label>
+    <label><input type="radio" name="django7" value="b)"><strong> b)</strong> `function`</label>
     <br/>
-    <label><input type="radio" name="django7" value="c)"><strong>c)</strong> `define`</label>
+    <label><input type="radio" name="django7" value="c)"><strong> c)</strong> `define`</label>
     <br/>
-    <label><input type="radio" name="django7" value="d)"><strong>d)</strong>`lambda` </label>
+    <label><input type="radio" name="django7" value="d)"><strong> d)</strong>`lambda` </label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer32()">Check your Answer</button>
     <p id="resultdjango7"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> Which command is used to apply database changes from Django models?</p>
-    <label><input type="radio" name="django8" value="a)"><strong>a)</strong>`python manage.py update` </label>
+    <p><strong>Q.</strong>18. Which command is used to apply database changes  from Django models?</p>
+    <label><input type="radio" name="django8" value="a)"><strong> a)</strong>`python manage.py update` </label>
     <br/>
-    <label><input type="radio" name="django8" value="b)"><strong>b)</strong>`django migrate</label>
+    <label><input type="radio" name="django8" value="b)"><strong> b)</strong>`django migrate</label>
     <br/>
-    <label><input type="radio" name="django8" value="c)"><strong>c)</strong>`python manage.py migrate` </label>
+    <label><input type="radio" name="django8" value="c)"><strong> c)</strong>`python manage.py migrate` </label>
     <br/>
     <label><input type="radio" name="django8" value="d)"><strong>d)</strong> `django models apply`</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer33()">Check your Answer</button>
     <p id="resultdjango8"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
     <p><strong>Q.</strong> What is the default database engine used in Django?</p>
-    <label><input type="radio" name="django9" value="a)"><strong>a)</strong> PostgreSQL</label>
+    <label><input type="radio" name="django9" value="a)"><strong> a)</strong> PostgreSQL</label>
     <br/>
-    <label><input type="radio" name="django9" value="b)"><strong>b)</strong> SQLite</label>
+    <label><input type="radio" name="django9" value="b)"><strong> b)</strong> SQLite</label>
+    <br/>    <label><input type="radio" name="django9" value="c)"><strong> c)</strong> MySQL</label>
     <br/>
-    <label><input type="radio" name="django9" value="c)"><strong>c)</strong> MySQL</label>
+    <label><input type="radio" name="django9" value="d)"><strong> d)</strong> MongoDB</label>
     <br/>
-    <label><input type="radio" name="django9" value="d)"><strong>d)</strong> MongoDB</label>
-    <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer34()">Check your Answer</button>
     <p id="resultdjango9"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> In Django, what is a view responsible for?</p>
-    <label><input type="radio" name="django10" value="a)"><strong>a)</strong>Designing HTML templates</label>
+    <p><strong>Q.</strong>19. In Django, what is a view responsible for?</p>
+    <label><input type="radio" name="django10" value="a)"><strong> a)</strong> Designing HTML templates</label>
     <br/>
-    <label><input type="radio" name="django10" value="b)"><strong>b)</strong>Handling database connections </label>
+    <label><input type="radio" name="django10" value="b)"><strong> b)</strong> Handling database connections </label>
     <br/>
-    <label><input type="radio" name="django10" value="c)"><strong>c)</strong>Processing requests and returning responses</label>
+    <label><input type="radio" name="django10" value="c)"><strong> c)</strong> Processing requests and returning responses</label>
     <br/>
-    <label><input type="radio" name="django10" value="d)"><strong>d)</strong>Defining URL paths</label>
+    <label><input type="radio" name="django10" value="d)"><strong> d)</strong> Defining URL paths</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer35()">Check your Answer</button>
     <p id="resultdjango10"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> What is the purpose of <code>settings.py</code> in a Django project?</p>
-    <label><input type="radio" name="django11" value="a)"><strong>a)</strong>Managing CSS files</label>
+    <p><strong>Q.</strong>20. What is the purpose of <code>settings.py</code> in a Django project?</p>
+    <label><input type="radio" name="django11" value="a)"><strong> a)</strong> Managing CSS files</label>
     <br/>
-    <label><input type="radio" name="django11" value="b)"><strong>b)</strong> Declaring database table fields</label>
+    <label><input type="radio" name="django11" value="b)"><strong> b)</strong> Declaring database table fields</label>
     <br/>
-    <label><input type="radio" name="django11" value="c)"><strong>c)</strong> Storing configuration like database, installed apps, static files</label>
+    <label><input type="radio" name="django11" value="c)"><strong> c)</strong> Storing configuration like database, installed apps, static files</label>
     <br/>
-    <label><input type="radio" name="django11" value="d)"><strong>d)</strong>Writing Python logic</label>
+    <label><input type="radio" name="django11" value="d)"><strong> d)</strong> Writing Python logic</label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer36()">Check your Answer</button>
     <p id="resultdjango11"></p>
 </div>
 <br/>
 <br/>
 <div class="m-c">
-    <p><strong>Q.</strong> What is the correct file extension for a Python file?</p>
-    <label><input type="radio" name="django12" value="a)"><strong>a)</strong>`.ptn` </label>
+    <p><strong>Q.</strong>21. What is the correct file extension for a Python file?</p>
+    <label><input type="radio" name="django12" value="a)"><strong> a)</strong> `.ptn` </label>
     <br/>
-    <label><input type="radio" name="django12" value="b)"><strong>b)</strong>`.java` </label>
+    <label><input type="radio" name="django12" value="b)"><strong> b)</strong> `.java` </label>
     <br/>
-    <label><input type="radio" name="django12" value="c)"><strong>c)</strong>`.py` </label>
+    <label><input type="radio" name="django12" value="c)"><strong> c)</strong> `.py` </label>
     <br/>
-    <label><input type="radio" name="django12" value="d)"><strong>d)</strong>`.exe` </label>
+    <label><input type="radio" name="django12" value="d)"><strong>d)</strong> `.exe` </label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer37()">Check your Answer</button>
     <p id="resultdjango12"></p>
 </div>
 <br/>
 <br/>
-<div class="m-c">
-    <p><strong>Q.</strong> What is a backend in app development responsible for?</p>
-    <label><input type="radio" name="django13" value="a)"><strong>a)</strong>Visual design of the app </label>
+    <div class="m-c">
+    <p><strong>Q.</strong>22. What is a backend in app development responsible for?</p>
+    <label><input type="radio" name="django13" value="a)"><strong> a)</strong> Visual design of the app </label>
     <br/>
-    <label><input type="radio" name="django13" value="b)"><strong>b)</strong> Styling HTML pages</label>
+    <label><input type="radio" name="django13" value="b)"><strong> b)</strong> Styling HTML pages</label>
     <br/>
-    <label><input type="radio" name="django13" value="c)"><strong>c)</strong>Handling data, servers, and logic behind the scenes </label>
+    <label><input type="radio" name="django13" value="c)"><strong> c)</strong> Handling data, servers, and logic behind the scenes </label>
     <br/>
-    <label><input type="radio" name="django13" value="d)"><strong>d)</strong>Making the app responsive </label>
+    <label><input type="radio" name="django13" value="d)"><strong> d)</strong> Making the app responsive </label>
     <br/>
-    <button onclick="checkAnswer()">Check your Answer</button>
+    <button class="btn" onclick="checkMCAnswer38()">Check your Answer</button>
     <p id="resultdjango13"></p>
 </div>
 </section>
 
+
+<!-------------------******************** Footer section***********-------------------->
+<footer>
+    <p>&copy; 2025 App Development Quiz. All rights reserved.</p>
+    <p>Designed by SkillSeekerHub</p>
+</footer>
 </body>
 </html>

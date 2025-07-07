@@ -1,64 +1,94 @@
 // beginner level  Q and A functions
+
+
 Q1 = "research,design,develop,test,deploy,maintain";
 Q = "research design develop test deploy maintain";
+// you want it like how it was before
+// one sec gonna have to re-write
 
-function checkQAswer1() {
-    if (document.getElementById("answer1").value === Q1 || document.getElementById("answer1").value === Q) {
-        document.getElementById("result").innerHTML = "Correct!";
-    } else {
-        document.getElementById("result").innerHTML = "Incorrect. The correct answer is: " + Q1;
-    }
-}
+const getResultMessage = (answer, result) => result ? "Correct!":`Incorrect. The correct answer is: ${answer}`
+function checkUserAnswer(questionNumber){
+    const userAnswer = document.getElementById(`answer${questionNumber}`).value;
 
-Q2 = "Native App,Web App,Hybrid App,Progressive Web App";
+    const answers = [
+        'research,design,develop,test,deploy,maintain',
+        "Native App,Web App,Hybrid App,Progressive Web App",
+        "Software Development Life Cycle",
+        "button, inputbox, dropdown, checkbox, radio button",
+        "HTML, CSS and JavaScript"
+    ]
+    let result = false;
+    if (questionNumber === 1|| questionNumber === 5) {
+        const wordsInUserAnswer = userAnswer.match(/[a-zA-Z]+/g); // I changed this part, it only looks for words ([a-zA-Z] means match any letter from a-z or A-Z, the + means 1 or more and the g means as many matches as possible
+        result = wordsInUserAnswer.every((word) =>
+        answers[questionNumber-1].split(",").includes(word.toLowerCase())
+        );
+    } else if (questionNumber === 4) {
+        result = wordsInUserAnswer.some((word) =>
+            answers[questionNumber-1].split(",").includes(word.toLowerCase())
+        );
+    } else result = userAnswer.toLowerCase() === answers[questionNumber-1].toLowerCase()
+    
+    document.getElementById(`result${questionNumber}` ).innerHTML = getResultMessage(answers[questionNumber  - 1], result);
+}//can i add more answers to this aray ?
 
-function checkQAnswer2() {
-    if (document.getElementById("answer2").value.trim().toLowerCase() === Q2.toLowerCase()) {
-        document.getElementById("result2").innerHTML = "Correct!";
-    } else {
-        document.getElementById("result2").innerHTML = " Incorrect. The correct answer is: " + Q2;
-    }
-}
+// function checkQAswer1() {
+//     if (document.getElementById("answer1").value === Q1 || document.getElementById("answer1").value === Q) {
+//         document.getElementById("result").innerHTML = "Correct!";
+//     } else {
+//         document.getElementById("result").innerHTML = "Incorrect. The correct answer is: " + Q1;
+//     }
+// }
+
+// Q2 = "Native App,Web App,Hybrid App,Progressive Web App";
+
+// function checkQAnswer2() {
+//     if (document.getElementById("answer2").value.trim().toLowerCase() === Q2.toLowerCase()) {
+//         document.getElementById("result2").innerHTML = "Correct!";
+//     } else {
+//         document.getElementById("result2").innerHTML = " Incorrect. The correct answer is: " + Q2;
+//     }
+// }
 
 
-Q3 = "Software Development Life Cycle";
+// Q3 = "Software Development Life Cycle";
 
-function checkQAnswer3() {
-    document.getElementById("result3").innerHTML = "";
-    if (document.getElementById("answer3").value.trim().toLowerCase() === Q3.toLowerCase()) {
-        document.getElementById("result3").innerHTML = "Correct!";
-    } else {
-        document.getElementById("result3").innerHTML = "Incorrect. The correct answer is: " + Q3;
-    }
-}
+// function checkQAnswer3() {
+//     document.getElementById("result3").innerHTML = "";
+//     if (document.getElementById("answer3").value.trim().toLowerCase() === Q3.toLowerCase()) {
+//         document.getElementById("result3").innerHTML = "Correct!";
+//     } else {
+//         document.getElementById("result3").innerHTML = "Incorrect. The correct answer is: " + Q3;
+//     }
+// }
 
-Q4 = "button, inputbox, dropdown, checkbox, radio button";
-function checkQAnswer4() {
-    document.getElementById("result4").innerHTML = "";
-    if (document.getElementById("answer4").value.trim().toLowerCase() === Q4.toLowerCase()) {
-        document.getElementById("result4").innerHTML = "Correct!";
-    } else if (document.getElementById("answer4").value.trim().toLowerCase() === "button") {
-        document.getElementById("result4").innerHTML = "correct";
-    } else if (document.getElementById("answer4").value.trim().toLowerCase() === "inputbox") {
-        document.getElementById("result4").innerHTML = "correct";
-    } else if (document.getElementById("answer4").value.trim().toLowerCase() === "dropdown") {
-        document.getElementById("result4").innerHTML = "correct";
-    } else if (document.getElementById("answer4").value.trim().toLowerCase() === "checkbox") {
-        document.getElementById("result4").innerHTML = "correct";
-    } else if (document.getElementById("answer4").value.trim().toLowerCase() === "radio button") {
-        document.getElementById("result4").innerHTML = "correct";
-    } else {
-        document.getElementById("result4").innerHTML = "Incorrect. The correct answer is: " + Q4;
-    }
-}
-Q5 = "HTML, CSS and JavaScript";
-function checkQAnswer5() {
-    if (document.getElementById("answer5").value.trim().toLowerCase() === Q5.toLowerCase()) {
-        document.getElementById("result5").innerHTML = "Correct!";
-    }else{
-        document.getElementById("result5").innerHTML = "Incorrect. The correct answer is: " + Q5;
-    }
-}
+// Q4 = "button, inputbox, dropdown, checkbox, radio button";
+// function checkQAnswer4() {
+//     document.getElementById("result4").innerHTML = "";
+//     if (document.getElementById("answer4").value.trim().toLowerCase() === Q4.toLowerCase()) {
+//         document.getElementById("result4").innerHTML = "Correct!";
+//     } else if (document.getElementById("answer4").value.trim().toLowerCase() === "button") {
+//         document.getElementById("result4").innerHTML = "correct";
+//     } else if (document.getElementById("answer4").value.trim().toLowerCase() === "inputbox") {
+//         document.getElementById("result4").innerHTML = "correct";
+//     } else if (document.getElementById("answer4").value.trim().toLowerCase() === "dropdown") {
+//         document.getElementById("result4").innerHTML = "correct";
+//     } else if (document.getElementById("answer4").value.trim().toLowerCase() === "checkbox") {
+//         document.getElementById("result4").innerHTML = "correct";
+//     } else if (document.getElementById("answer4").value.trim().toLowerCase() === "radio button") {
+//         document.getElementById("result4").innerHTML = "correct";
+//     } else {
+//         document.getElementById("result4").innerHTML = "Incorrect. The correct answer is: " + Q4;
+//     }
+// }
+// Q5 = "HTML, CSS and JavaScript";
+// function checkQAnswer5() {
+//     if (document.getElementById("answer5").value.trim().toLowerCase() === Q5.toLowerCase()) {
+//         document.getElementById("result5").innerHTML = "Correct!";
+//     }else{
+//         document.getElementById("result5").innerHTML = "Incorrect. The correct answer is: " + Q5;
+//     }
+// }
 
 
 // beginner level multiple choice answers function
@@ -77,7 +107,7 @@ function checkMCAnswer1() {
         }
     }
 
-    var output = document.getElementById("resultm_c1");
+    
     if (selected === checkMCAnswer1) {
         document.getElementById("resultm_c1").innerHTML = "Correct";
     } else {
@@ -97,7 +127,7 @@ function checkMCAnswer2() {
         }
     }
 
-    var output = document.getElementById("resultm_c2");
+    
     if (selected === checkMCAnswer2) {
         document.getElementById("resultm_c2").innerHTML = "Correct"
     } else {
@@ -117,7 +147,7 @@ function checkMCAnswer3() {
         }
     }
 
-    var output = document.getElementById("resultm_c3");
+    
     if (selected === checkMCAnswer3) {
         document.getElementById("resultm_c3").innerHTML = "Correct"
     } else {
@@ -127,7 +157,7 @@ function checkMCAnswer3() {
 
 function checkMCAnswer4() {
     var choices = document.getElementsByName("choice4");
-    var checkMCAnswer3 = "b)";
+    var checkMCAnswer4 = "b)";
     var selected = "";
 
     for (var i = 0; i < choices.length; i++) {
@@ -137,7 +167,7 @@ function checkMCAnswer4() {
         }
     }
 
-    var output = document.getElementById("resultm_c4");
+    
     if (selected === checkMCAnswer4) {
         document.getElementById("resultm_c4").innerHTML = "Correct"
     } else {
@@ -157,7 +187,7 @@ function checkMCAnswer5() {
         }
     }
 
-    var output = document.getElementById("resultm_c5");
+    
     if (selected === checkMCAnswer5) {
         document.getElementById("resultm_c5").innerHTML = "Correct"
     } else {
@@ -177,7 +207,7 @@ function checkMCAnswer6() {
         }
     }
 
-    var output = document.getElementById("resultm_c6");
+    
     if (selected === checkMCAnswer6) {
         document.getElementById("resultm_c6").innerHTML = "Correct"
     } else {
@@ -197,7 +227,7 @@ function checkMCAnswer7() {
         }
     }
 
-    var output = document.getElementById("resultm_c7");
+    
     if (selected === checkMCAnswer7) {
         document.getElementById("resultm_c7").innerHTML = "Correct"
     } else {
@@ -217,7 +247,7 @@ function checkMCAnswer8() {
         }
     }
 
-    var output = document.getElementById("resultm_c8");
+    
     if (selected === checkMCAnswer8) {
         document.getElementById("resultm_c8").innerHTML = "Correct"
     } else {
@@ -237,7 +267,7 @@ function checkMCAnswer9() {
         }
     }
 
-    var output = document.getElementById("resultm_c9");
+    
     if (selected === checkMCAnswer9) {
         document.getElementById("resultm_c9").innerHTML = "Correct"
     } else {
@@ -247,7 +277,7 @@ function checkMCAnswer9() {
 
 //Intermediate Q and A section//
 
-//Intermediate MC section//<
+//Intermediate MC section//
 
 function checkMCAnswer10() {
     var choices = document.getElementsByName("ux5");
@@ -261,11 +291,10 @@ function checkMCAnswer10() {
         }
     }
 
-    var output = document.getElementById("resultm_cux5");
-    if (selected === checkMCAnswer11) {
-        document.getElementById("resultm_cux5").innerHTML = "Correct"
+        if (selected === checkMCAnswer10) {
+        document.getElementById("resultux5").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux5").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer10;
+        document.getElementById("resultux5").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer10;
     }
 }
 
@@ -281,11 +310,10 @@ function checkMCAnswer11() {
         }
     }
 
-    var output = document.getElementById("resultm_cux6");
     if (selected === checkMCAnswer11) {
-        document.getElementById("resultm_cux6").innerHTML = "Correct"
+        document.getElementById("resultux6").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux6").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer11;
+        document.getElementById("resultux6").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer11;
     }
 }
 
@@ -301,11 +329,10 @@ function checkMCAnswer12() {
         }
     }
 
-    var output = document.getElementById("resultm_cux7");
-    if (selected === checkMCAnswer12) {
-        document.getElementById("resultm_cux7").innerHTML = "Correct"
+        if (selected === checkMCAnswer12) {
+        document.getElementById("resultux7").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux7").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer12;
+        document.getElementById("resultux7").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer12;
     }
 }
 
@@ -321,16 +348,15 @@ function checkMCAnswer13() {
         }
     }
 
-    var output = document.getElementById("resultm_cux8");
-    if (selected === checkMCAnswer12) {
-        document.getElementById("resultm_cux8").innerHTML = "Correct"
+        if (selected === checkMCAnswer13) {
+        document.getElementById("resultux8").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux8").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer13;
+        document.getElementById("resultux8").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer13;
     }
 }
 
 function checkMCAnswer14() {
-    var choices = document.getElementsByName("ux9");
+    var choices = document.getElementsByName("ux9"); 
     var checkMCAnswer14 = "b)";
     var selected = "";
 
@@ -341,11 +367,10 @@ function checkMCAnswer14() {
         }
     }
 
-    var output = document.getElementById("resultm_cux9");
-    if (selected === checkMCAnswer14) {
-        document.getElementById("resultm_cux9").innerHTML = "Correct"
+        if (selected === checkMCAnswer14) {
+        document.getElementById("resultux9").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux9").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer14;
+        document.getElementById("resultux9").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer14;
     }
 }
 
@@ -361,11 +386,10 @@ function checkMCAnswer15() {
         }
     }
 
-    var output = document.getElementById("resultm_cux10");
-    if (selected === checkMCAnswer15) {
-        document.getElementById("resultm_cux10").innerHTML = "Correct"
+        if (selected === checkMCAnswer15) {
+        document.getElementById("resultux10").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux10").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer15;
+        document.getElementById("resultux10").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer15;
     }
 }
 
@@ -381,11 +405,10 @@ function checkMCAnswer16() {
         }
     }
 
-    var output = document.getElementById("resultm_cux11");
-    if (selected === checkMCAnswer16) {
-        document.getElementById("resultm_cux11").innerHTML = "Correct"
+        if (selected === checkMCAnswer16) {
+        document.getElementById("resultux11").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux11").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer16;
+        document.getElementById("resultux11").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer16;
     }
 }
 
@@ -401,11 +424,10 @@ function checkMCAnswer17() {
         }
     }
 
-    var output = document.getElementById("resultm_cux12");
-    if (selected === checkMCAnswer17) {
-        document.getElementById("resultm_cux12").innerHTML = "Correct"
+        if (selected === checkMCAnswer17) {
+        document.getElementById("resultux12").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux12").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer17;
+        document.getElementById("resultux12").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer17;
     }
 }
 
@@ -421,11 +443,11 @@ function checkMCAnswer18() {
         }
     }
 
-    var output = document.getElementById("resultm_cux13");
-    if (selected === cheMCAnswer18) {
-        document.getElementById("resultm_cux13").innerHTML = "Correct"
+    ;
+    if (selected === checkMCAnswer18) {
+        document.getElementById("resultux13").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux13").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer18;
+        document.getElementById("resultux13").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer18;
     }
 }
 
@@ -441,11 +463,10 @@ function checkMCAnswer19() {
         }
     }
 
-    var output = document.getElementById("resultm_cux14");
-    if (selected === checkMCAnswer19) {
-        document.getElementById("resultm_cux14").innerHTML = "Correct"
+        if (selected === checkMCAnswer19) {
+        document.getElementById("resultux14").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux14").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer19;
+        document.getElementById("resultux14").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer19;
     }
 }
 
@@ -461,11 +482,10 @@ function checkMCAnswer20() {
         }
     }
 
-    var output = document.getElementById("resultm_cux15");
-    if (selected === checkMCAnswer20) {
-        document.getElementById("resultm_cux15").innerHTML = "Correct"
+        if (selected === checkMCAnswer20) {
+        document.getElementById("resultux15").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux15").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer20;
+        document.getElementById("resultux15").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer20;
     }
 }
 
@@ -481,16 +501,32 @@ function checkMCAnswer21() {
         }
     }
 
-    var output = document.getElementById("resultm_cux16");
-    if (selected === cheMCAnswer21) {
-        document.getElementById("resultm_cux16").innerHTML = "Correct"
+    ;
+    if (selected === checkMCAnswer21) {
+        document.getElementById("resultux16").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cux16").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer21;
+        document.getElementById("resultux16").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer21;
     }
 }
 
 //Advanced level Q and A section//
+function checkAdvancedAnswer(index) {
+    const answers = [
+        "create,read,update,delete",
+        "Flask",
+        "Application programming interface"
+    ]// add the answers in order
+    
+    const userAnswer = document.getElementById(`advanced_answer${index}`).value.toLowerCase();
+    const correctAnswer = answers[index-1].toLowerCase();
 
+    let result;
+    if(index===1){
+        const wordsInUserAnswer = userAnswer.match(/[a-zA-Z]+/g); 
+        result = wordsInUserAnswer.every((word) => correctAnswer.split(",").includes(word));
+    } else result = userAnswer == correctAnswer;
+    document.getElementById(`advanced_result${index}`).innerHTML = getResultMessage(correctAnswer, result);
+}
 //Advanced level MC section//<
 
 function checkMCAnswer22() {
@@ -505,11 +541,10 @@ function checkMCAnswer22() {
         }
     }
 
-    var output = document.getElementById("resultm_ccrud1");
-    if (selected === checkMCAnswer22) {
-        document.getElementById("resultm_ccrud1").innerHTML = "Correct"
+        if (selected === checkMCAnswer22) {
+        document.getElementById("resultcrud1").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_ccrud1").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer22;
+        document.getElementById("resultcrud1").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer22;
     }
 }
 
@@ -525,11 +560,10 @@ function checkMCAnswer23() {
         }
     }
 
-    var output = document.getElementById("resultm_ccrud2");
-    if (selected === checkMCAnswer23) {
-        document.getElementById("resultm_ccrud2").innerHTML = "Correct"
+        if (selected === checkMCAnswer23) {
+        document.getElementById("resultcrud2").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_ccrud2").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer23;
+        document.getElementById("resultcrud2").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer23;
     }
 }
 
@@ -545,11 +579,10 @@ function checkMCAnswer24() {
         }
     }
 
-    var output = document.getElementById("resultm_ccrud3");
-    if (selected === checkMCAnswer24) {
-        document.getElementById("resultm_ccrud3").innerHTML = "Correct"
+        if (selected === checkMCAnswer24) {
+        document.getElementById("resultcrud3").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_ccrud3").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer24;
+        document.getElementById("resultcrud3").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer24;
     }
 }
 
@@ -565,11 +598,10 @@ function checkMCAnswer25() {
         }
     }
 
-    var output = document.getElementById("resultm_ccrud4");
-    if (selected === checkMCAnswer25) {
-        document.getElementById("resultm_ccrud4").innerHTML = "Correct"
+        if (selected === checkMCAnswer25) {
+        document.getElementById("resultcrud4").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_ccrud4").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer25;
+        document.getElementById("resultcrud4").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer25;
     }
 }
 
@@ -586,11 +618,10 @@ function checkMCAnswer26() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango1");
-    if (selected === checkMCAnswer26) {
-        document.getElementById("resultm_cdjango1").innerHTML = "Correct"
+        if (selected === checkMCAnswer26) {
+        document.getElementById("resultdjango1").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango1").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer26;
+        document.getElementById("resultdjango1").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer26;
     }
 }
 
@@ -606,11 +637,10 @@ function checkMCAnswer27() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango2");
-    if (selected === checkMCAnswer27) {
-        document.getElementById("resultm_cdjango2").innerHTML = "Correct"
+        if (selected === checkMCAnswer27) {
+        document.getElementById("resultdjango2").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango2").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer27;
+        document.getElementById("resultdjango2").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer27;
     }
 }
 
@@ -626,11 +656,10 @@ function checkMCAnswer28() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango3");
-    if (selected === checkMCAnswer28) {
-        document.getElementById("resultm_cdjango3").innerHTML = "Correct"
+        if (selected === checkMCAnswer28) {
+        document.getElementById("resultdjango3").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango3").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer28; 
+        document.getElementById("resultdjango3").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer28; 
     }
 }
 //4 c, 5 a, 6 b, 7 a , 8 c, 9 b, 10 c, 11 c, 12 c
@@ -646,11 +675,10 @@ function checkMCAnswer29() {
         }
     }
 
-      var output = document.getElementById("resultm_cdjango4");
     if (selected === checkMCAnswer29) {
-        document.getElementById("resultm_cdjango4").innerHTML = "Correct"
+        document.getElementById("resultdjango4").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango4").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer29;
+        document.getElementById("resultdjango4").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer29;
     }
 }
 
@@ -670,14 +698,13 @@ function checkMCAnswer30() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango5");
-    if (selected === checkMCAnswer30) {
-        document.getElementById("resultm_cdjango5").innerHTML = "Correct"
+        if (selected === checkMCAnswer30) {
+        document.getElementById("resultdjango5").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango5").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer30;
+        document.getElementById("resultdjango5").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer30;
     }
 }
-//4 c, 5 a, 6 b, 7 a , 8 c, 9 b, 10 c, 11 c, 12 c
+//---------- checkMCAnswer31---------------//
 function checkMCAnswer31() {
     var choices = document.getElementsByName("django6");
     var checkMCAnswer31 = "b)";
@@ -690,19 +717,16 @@ function checkMCAnswer31() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango6");
-    if (selected === checkMCAnswer31) {
-        document.getElementById("resultm_cdjango6").innerHTML = "Correct"
+        if (selected === checkMCAnswer31) {
+        document.getElementById("resultdjango6").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango6").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer31;
+        document.getElementById("resultdjango6").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer31;
     }
 }
-
- //4 c, 5 a, 6 b, 7 a , 8 c, 9 b, 10 c, 11 c, 12 c 
-
+//---------- checkMCAnswer32---------------//
 function checkMCAnswer32() {
     var choices = document.getElementsByName("django7");
-    var checkMCAnswer27 = "a)";
+    var checkMCAnswer32 = "a)";
     var selected = "";
 
     for (var i = 0; i < choices.length; i++) {
@@ -712,14 +736,13 @@ function checkMCAnswer32() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango7");
-    if (selected === checkMCAnswer32) {
-        document.getElementById("resultm_cdjango7").innerHTML = "Correct"
+        if (selected === checkMCAnswer32) {
+        document.getElementById("resultdjango7").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango7").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer32;
+        document.getElementById("resultdjango7").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer32;
     }
 }
-
+//---------- checkMCAnswer33---------------//
 function checkMCAnswer33() {
     var choices = document.getElementsByName("django8");
     var checkMCAnswer33 = "c)";
@@ -732,14 +755,13 @@ function checkMCAnswer33() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango8");
-    if (selected === checkMCAnswer33) {
-        document.getElementById("resultm_cdjango8").innerHTML = "Correct"
+        if (selected === checkMCAnswer33) {
+        document.getElementById("resultdjango8").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango8").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer33;
+        document.getElementById("resultdjango8").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer33;
     }
 }
-
+//---------- checkMCAnswer34---------------//
 function checkMCAnswer34() {
     var choices = document.getElementsByName("django9");
     var checkMCAnswer34 = "b)";
@@ -752,14 +774,13 @@ function checkMCAnswer34() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango9");
-    if (selected === checkMCAnswer34) {
-        document.getElementById("resultm_cdjango9").innerHTML = "Correct"
+        if (selected === checkMCAnswer34) {
+        document.getElementById("resultdjango9").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango9").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer34;
+        document.getElementById("resultdjango9").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer34;
     }
 }
-//4 c, 5 a, 6 b, 7 a , 8 c, 9 b, 10 c, 11 c, 12 c
+//---------- checkMCAnswer35---------------//
 function checkMCAnswer35() {
     var choices = document.getElementsByName("django10");
     var checkMCAnswer35 = "c)";
@@ -772,14 +793,13 @@ function checkMCAnswer35() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango10");
-    if (selected === checkMCAnswer35) {
-        document.getElementById("resultm_cdjango10").innerHTML = "Correct"
+        if (selected === checkMCAnswer35) {
+        document.getElementById("resultdjango10").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango10").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer35;
+        document.getElementById("resultdjango10").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer35;
     }
 }
-//4 c, 5 a, 6 b, 7 a , 8 c, 9 b, 10 c, 11 c, 12 c
+//---------- checkMCAnswer36---------------//
 function checkMCAnswer36() {
     var choices = document.getElementsByName("django11");
     var checkMCAnswer36 = "c)";
@@ -792,14 +812,13 @@ function checkMCAnswer36() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango11");
-    if (selected === checkMCAnswer36) {
-        document.getElementById("resultm_cdjango11").innerHTML = "Correct"
+        if (selected === checkMCAnswer36) {
+        document.getElementById("resultdjango11").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango11").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer36;
+        document.getElementById("resultdjango11").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer36;
     }
 }
-//4 c, 5 a, 6 b, 7 a , 8 c, 9 b, 10 c, 11 c, 12 c,13 c, paul i checked the answers they are correct lets wait for mr africa /but you can check 2
+//---------- checkMCAnswer37---------------//
 function checkMCAnswer37() {
     var choices = document.getElementsByName("django12");
     var checkMCAnswer37 = "c)";
@@ -812,11 +831,29 @@ function checkMCAnswer37() {
         }
     }
 
-    var output = document.getElementById("resultm_cdjango12");
-    if (selected === checkMCAnswer37) {
-        document.getElementById("resultm_cdjango12").innerHTML = "Correct"
+        if (selected === checkMCAnswer37) {
+        document.getElementById("resultdjango12").innerHTML = "Correct"
     } else {
-        document.getElementById("resultm_cdjango12").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer37;
+        document.getElementById("resultdjango12").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer37;
+    }
+}
+//---------- checkMCAnswer38---------------//
+function checkMCAnswer38() {
+    var choices = document.getElementsByName("django13");
+    var checkMCAnswer38 = "c)";
+    var selected = "";
+
+    for (var i = 0; i < choices.length; i++) {
+        if (choices[i].checked) {
+        selected = choices[i].value;
+        break;
+        }
+    }
+
+        if (selected === checkMCAnswer38) {
+        document.getElementById("resultdjango13").innerHTML = "Correct"
+    } else {
+        document.getElementById("resultdjango13").innerHTML = "Incorrect. The correct answer is: " + checkMCAnswer38;
     }
 }
 

@@ -101,10 +101,10 @@ function checkMCAnswer(index, difficulty="beginner") {
       dataSet = [];
   }
 
-  const correctIndex = dataSet[index]?.answer;
-  const correctText = dataSet[index]?.choices[correctIndex];
+  const correctChoice = dataSet[index]?.answer;
+  const correctText = dataSet[index]?.choices[correctChoice];
 
-  const result = selectedIndex === correctIndex;
+  const result = selectedIndex === correctChoice;
 
   document.getElementById(resultID).innerHTML = getResultMessage(correctText, result);
 }
