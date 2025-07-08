@@ -243,11 +243,8 @@ d. To avoid using CSS
    **A:** GET
 
 8. **User-Centric App Development**
-   **Q:** Why is user testing essential during app development? *(Multiple choice)*
-   a. To verify performance optimization
-   b. To ensure the color scheme is attractive
-   c. To identify usability issues early
-   **A:** c. To identify usability issues early
+   **Q:** Why is user testing essential during app development? 
+   **A:** To identify usability issues early
 
 9. **Data Management & Analysis**
    **Q:** Which data structure would you use to store and sort a list of app users?

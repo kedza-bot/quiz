@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <script src="javaScript.js"></script>
     <link rel="stylesheet" href="Quiz.css">
@@ -215,7 +216,8 @@
 
 <!-----------------------*****Intermediate App Development****-->
 <!-- <h4>Intermediate App Development Quiz</h4> -->
-
+<br>
+<br>
 <!------------********************* Intermediate Q and A  section*******************(5)-->
 <Section class="mult-Q">
     <h4 class="levels">Intermediate Level <span>(Weeks 4-6)</span></h4>
@@ -223,51 +225,44 @@
     <br/>
     <br/>
     <div class="QandA">
-        <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
-        <input type="text" id="answer1" placeholder="Your answer here">
-        <button class="btn" onclick="checkQAnswer1()">Submit</button>
-        <p id="result"></p>
+        <p><strong>Q</strong>1. What are the five stages of Design Thinking?</p>
+        <input type="text" id="intermediate_answer1" placeholder="Your answer here">
+        <button class="btn" onclick="checkIntermediateAnswer(1)">Submit</button>
+        <p id="intermediate_result1" ></p>
     </div>
     <br/>
     <br/>
     <div class="QandA">
-    <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
-        <input type="text" id="answer2" placeholder="Your answer here">
-        <button class="btn" onclick="checkQAnswer1()">Submit</button>
-        <p id="result"></p>
+    <p><strong>Q</strong>2. In REST APIs, which HTTP method is used to fetch data?</p>
+        <input type="text" id="intermediate_answer2" placeholder="Your answer here">
+        <button class="btn" onclick="checkIntermediateAnswer(2)">Submit</button>
+        <p id="intermediate_result2"></p>
     </div> 
     <br/>
     <br/>
     <div class="QandA">
-        <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
-        <input type="text" id="answer3" placeholder="Your answer here">
-        <button class="btn" onclick="checkQAnswer3()">Submit</button>
-        <p id="result"></p>
+        <p><strong>Q</strong>3. Which data structure would you use to store and sort a list of app users?</p>
+        <input type="text" id="intermediate_answer3" placeholder="Your answer here">
+        <button class="btn" onclick="checkIntermediateAnswer(3)">Submit</button>
+        <p id="intermediate_result3"></p>
     </div> 
     <br/>
     <br/>
     <div class="QandA">
-        <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
-        <input type="text" id="answer4" placeholder="Your answer here">
-        <button class="btn" onclick="checkQAnswer4()">Submit</button>
-        <p id="result"></p>
+        <p><strong>Q</strong>4. What does MVP in web development stand for?</p>
+        <input type="text" id="intermediate_answer4" placeholder="Your answer here">
+        <button class="btn" onclick="checkIntermediateAnswer(4)">Submit</button>
+        <p id="intermediate_result4"></p>
     </div> 
     <br/>
     <br/><div class="QandA">
-        <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
-        <input type="text" id="answer5" placeholder="Your answer here">
-        <button class="btn" onclick="checkQAnswer5()">Submit</button>
-        <p id="result"></p>
+        <p><strong>Q</strong>5. Why is user testing essential during app development?</p>
+        <input type="text" id="intermediate_answer5" placeholder="Your answer here">
+        <button class="btn" onclick="checkIntermediateAnswer(5)">Submit</button>
+        <p id="intermediate_result5"></p>
     </div> 
-    <br/>
-    <br/>
-    <div class="QandA">
-        <p><strong>Q</strong>Name one key UI micro-interaction and its purpose.</p>
-        <input type="text" id="answer1" placeholder="Your answer here">
-        <button class="btn" onclick="checkAnswer()">Submit</button>
-        <p id="result"></p>
-    </div>  
-</Section>
+    
+    </Section>
 <br/>
 <br/>
 <!-------------------********************Intermediate  multiple choice section***********-------------------->
@@ -423,7 +418,7 @@
     <br/>
     <br/>
     <div class="m-c">
-        <p><strong>Q.</strong>What is one ke y reason to learn Business  Development during app creation?</p>
+        <p><strong>Q.</strong>What is one key reason to learn Business  Development during app creation?</p>
         <label><input type="radio" name="ux15" value="a)"><strong>a)</strong> To become a better designer</label>
         <br/>
         <label><input type="radio" name="ux15" value="b)"><strong>b)</strong> To help market, fund, and grow your app idea</label>
@@ -459,10 +454,6 @@
     <br/>
     <div class="QandA">
         <p><strong>Q</strong>1. What does CRUD stand for in API design?</p>
-        <!-- <input type="text" id="answer1" placeholder="Your answer here"> -->
-        <!-- <button class="btn" onclick="checkAnswer()">Submit</button> -->
-        <!-- <p id="result"></p> -->
-        <!-- try now -->
         <input type="text" id="advanced_answer1" placeholder="Your answer here">
         <button onclick="checkAdvancedAnswer(1)">Submit</button>
         <p id="advanced_result1"></p>
@@ -471,9 +462,6 @@
     <br/>
     <div class="QandA">
         <p><strong>Q</strong>2. Which Python web framework is commonly used to build APIs?</p>
-        <!-- <input type="text" id="answer1" placeholder="Your answer here">
-        <button class="btn" onclick="checkAnswer()">Submit</button>
-        <p id="result"></p> -->
         <input type="text" id="advanced_answer2" placeholder="Your answer here">
         <button onclick="checkAdvancedAnswer(2)">Submit</button>
         <p id="advanced_result2"></p>
@@ -502,15 +490,12 @@
 </div> 
 <br/>
 <br/>
-<div class="QandA">
+<!-- <div class="QandA">
     <p><strong>Q</strong>5. What’s the difference between venture capital and angel investment? </p>
-    <!-- <input type="text" id="answer1" placeholder="Your answer here">
-    <button class="btn" onclick="checkAnswer()">Submit</button>
-    <p id="result"></p> -->
     <input type="text" id="advanced_answer5" placeholder="Your answer here">
         <button onclick="checkAdvancedAnswer(5)">Submit</button>
         <p id="advanced_result5"></p>
-</div> 
+</div>  -->
 
 </section class="mult-Q">
 <br>
@@ -549,13 +534,13 @@
     <br/>
     <div class="m-c">
         <p><strong>Q.</strong>8. Which of the following is a potent ial source of startup funding?</p>
-        <label><input type="radio" name="crud3" value="a)"><strong>a)</strong> App Store reviews </label>
+        <label><input type="radio" name="crud3" value="a)"><strong> a)</strong> App Store reviews </label>
         <br/>
-        <label><input type="radio" name="crud3" value="b)"><strong>b)</strong> Venture Capital</label>
+        <label><input type="radio" name="crud3" value="b)"><strong> b)</strong> Venture Capital</label>
         <br/>
-        <label><input type="radio" name="crud3" value="c)"><strong>c)</strong> HTML templates</label>
+        <label><input type="radio" name="crud3" value="c)"><strong> c)</strong> HTML templates</label>
         <br/>
-        <label><input type="radio" name="crud3" value="d)"><strong>d)</strong> API tokens</label>
+        <label><input type="radio" name="crud3" value="d)"><strong> d)</strong> API tokens</label>
         <br/>
         <button class="btn" onclick="checkMCAnswer24()">Check your Answer</button>
         <p id="resultcrud3"></p>
@@ -690,7 +675,7 @@
     <br/>
     <label><input type="radio" name="django8" value="c)"><strong> c)</strong>`python manage.py migrate` </label>
     <br/>
-    <label><input type="radio" name="django8" value="d)"><strong>d)</strong> `django models apply`</label>
+    <label><input type="radio" name="django8" value="d)"><strong> d)</strong> `django models apply`</label>
     <br/>
     <button class="btn" onclick="checkMCAnswer33()">Check your Answer</button>
     <p id="resultdjango8"></p>
@@ -749,7 +734,7 @@
     <br/>
     <label><input type="radio" name="django12" value="c)"><strong> c)</strong> `.py` </label>
     <br/>
-    <label><input type="radio" name="django12" value="d)"><strong>d)</strong> `.exe` </label>
+    <label><input type="radio" name="django12" value="d)"><strong> d)</strong> `.exe` </label>
     <br/>
     <button class="btn" onclick="checkMCAnswer37()">Check your Answer</button>
     <p id="resultdjango12"></p>
