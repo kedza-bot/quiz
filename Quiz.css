@@ -214,6 +214,107 @@ footer{
     text-decoration: none;
     font-size: medium;
   }
+  /*-----------------------------88**88******about css*********-----------------------------*/
+
+body, h1, h2, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+
+/* Container styles */
+.container.about-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    padding: 36px 28px;
+}
+
+/* Headings */
+.abh1, .about-title {
+    font-size: 2.2em;
+    margin-bottom: 18px;
+    color: #2d3e50;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-section-title {
+    font-size: 1.3em;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: #34495e;
+    font-weight: 600;
+}
+
+/* Paragraphs */
+.abp, .about-description,
+.about-contributing,
+.about-license {
+    font-size: 1.08em;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.about-contributing a {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.about-contributing a:hover {
+    color: #1abc9c;
+}
+.abload {
+    color: #2980b9;
+    font-weight: medium;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Lists */
+.about-features-list,
+.about-getting-started-list {
+    margin-left: 24px;
+    margin-bottom: 18px;
+}
+
+.about-feature-item,
+.about-getting-started-item {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+/* Code styling */
+code {
+    background: #f4f4f4;
+    color: #c7254e;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.98em;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+}
+.ablinks {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container.about-container {
+        padding: 18px 8px;
+    }
+    .menu a {
+        margin: 0 8px;
+        font-size: 1em;
+    }
+    .abh1, .about-title {
+        font-size: 1.4em;
+    }
+}
 
 /**------------------------------******media query*********------------------------------**/
 @media (max-width: 768px) {
