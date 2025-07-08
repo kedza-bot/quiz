@@ -28,6 +28,7 @@ function checkUserAnswer(questionNumber){
 }
 
 //-------------- Beginner level multiple choice answers function-------------------//
+
 function checkMCAnswer1() {
     var choices = document.getElementsByName("choice1");
     var checkMCAnswer1 = "c)";

@@ -22,7 +22,7 @@ d. To debug HTML code
 
 ---
 
-### **3. Which of the following is NOT a stage in the Software Development Life Cycle (SDLc.?**
+### **3. Which of the following is NOT a stage in the Software Development Life Cycle (SDLc)?**
 
 a. Design
 b. Testing
@@ -352,9 +352,6 @@ b. To attract users and grow the app’s visibility
 c. To store user passwords
 d. To manage source code
 **✅ Answer:** b. To attract users and grow the app’s visibility
-
-
-
 
 12. **Backend Intro & Building an API**
     **Q:** What does CRUD stand for in API design?
