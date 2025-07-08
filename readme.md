@@ -1,7 +1,7 @@
 # Welcome to SkillSeekerHub Quiz
 ## FnB app acadamy (2025) 
 ## Test your knowledge with our fun Quizzes!
-[Click here to take the Quize here](https://kedza-bot.github.com/quiz)
+[Click here to take the Quize here](https://kedza-bot.github.io/quiz/)
 
 ## Description
 This is a simple quiz application built with HTML, CSS, and JavaScript. Users can answer multiple-choice questions and Question & Answer
