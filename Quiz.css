@@ -198,3 +198,123 @@ hr{
 p{
   font-size: 1.2rem;
 }
+footer{
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+    color: #f5f5f5;
+    background-color: rgb(26, 14, 49);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .fp {
+    color: rgb(161, 143, 197);
+    text-decoration: none;
+    font-size: medium;
+  }
+
+/**------------------------------******media query*********------------------------------**/
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+    .menu a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .welcome h1 {
+        font-size: 2rem;
+        margin: 60px 0 10px;
+        padding: 0 10px;
+    }
+    .welcome h3 {
+        font-size: 1.2rem;
+    }
+    .QandA {
+        width: 95%;
+        padding: 15px;
+    }
+    .QandA p {
+        font-size: 1rem;
+    }
+    .QandA input {
+        font-size: 0.9rem;
+    }
+    .QandA button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    .levels {
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+        padding: 0 5px;
+    }
+    .levels span {
+        font-size: 1.2rem;
+    }
+    hr{
+        width: 95%;
+        margin: 30px auto;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    .m-c {
+        width: 95%;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .m-cp {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    footer{
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+    color: #f5f5f5;
+    background-color: rgb(26, 14, 49);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .fp {
+    color: rgb(161, 143, 197);
+    text-decoration: none;
+    font-size: medium;
+  }
+    .mult-Q {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .m-c {
+        width: 95%;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .m-cp {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    .QandA input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .QandA p {
+        font-size: 1rem;
+    }
+    .QandA button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    
+
+  }
