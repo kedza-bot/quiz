@@ -7,7 +7,7 @@ function checkUserAnswer(questionNumber){
     const answers = [
         ["research","design","develop","test","deploy","maintain"],
         ["Native","Web","Hybrid","Progressive"],
-        "Software Development Life Cycle",
+        "software development life cycle",
         ["button","inputbox","dropdown","checkbox","radio"],
         ["HTML","CSS","JavaScript"]
     ]
@@ -172,7 +172,7 @@ function checkMCAnswer7() {
 //_____________CheckMCAnswer8__________//
 function checkMCAnswer8() {
     var choices = document.getElementsByName("choice8");
-    var checkMCAnswer8 = "c)";
+    var checkMCAnswer8 = "b)";
     var selected = "";
 
     for (var i = 0; i < choices.length; i++) {
@@ -216,9 +216,9 @@ function checkIntermediateAnswer(questionNumber){
     const userAnswer = document.getElementById(`intermediate_answer${questionNumber}`).value.toLowerCase();
 
     const answers = [
-        ["empathize","define","ideate","prototype","test"],
+        ["empathise","define","ideate","prototype","test"],
         "get",
-        ["array","list"],
+        ["array","arrays","list"],
         ["minimum","viable","product"],
         ["identify", "usability", "issues"]
     ]
@@ -456,7 +456,7 @@ function checkMCAnswer20() {
 //_____________CheckMCAnswer21__________//
 function checkMCAnswer21() {
     var choices = document.getElementsByName("ux16");
-    var cheMCAnswer21 = "c)";
+    var checkMCAnswer21 = "c)";
     var selected = "";
 
     for (var i = 0; i < choices.length; i++) {
